@@ -1,12 +1,12 @@
 #include "libft.h"
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	char *str;
-	int i;
-	int len;
-	int div;
-	int nb;
+	char	*str;
+	int	i;
+	int	len;
+	int	div;
+	int	nb;
 
 	nb = n;
 	len = 1;
