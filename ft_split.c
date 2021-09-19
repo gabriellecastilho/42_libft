@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gcastilh <gcastilh@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/19 12:53:59 by gcastilh          #+#    #+#             */
+/*   Updated: 2021/09/19 12:53:59 by gcastilh         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_nbr_lines(const char *s, char c)
@@ -53,7 +65,7 @@ char	**ft_split(char const *s, char c)
 	end = 0;
 	if (!s)
 		return (NULL);
-	array = (char **)malloc(sizeof(char *) * (ft_nbr_lines(s,c) + 1));
+	array = (char **)malloc(sizeof(char *) * (ft_nbr_lines(s, c) + 1));
 	if (!array)
 		return (malloc(0));
 	while (i < ft_nbr_lines(s, c))
