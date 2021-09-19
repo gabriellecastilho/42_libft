@@ -6,7 +6,7 @@
 /*   By: gcastilh <gcastilh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/19 12:54:59 by gcastilh          #+#    #+#             */
-/*   Updated: 2021/09/19 12:54:59 by gcastilh         ###   ########.fr       */
+/*   Updated: 2021/09/19 13:15:16 by gcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-	}	t_list;
+}	t_list;
 
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);

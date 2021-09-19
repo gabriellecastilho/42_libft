@@ -6,7 +6,7 @@
 /*   By: gcastilh <gcastilh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/19 12:54:38 by gcastilh          #+#    #+#             */
-/*   Updated: 2021/09/19 12:54:38 by gcastilh         ###   ########.fr       */
+/*   Updated: 2021/09/19 13:13:03 by gcastilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	i = 0;
 	while (--n && str1[i] && str2[i] && str1[i] == str2[i])
 		i++;
-	return (str1[i] - str2[i]);
+	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 }
